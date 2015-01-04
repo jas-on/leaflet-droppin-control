@@ -15,8 +15,7 @@
     options: {
       position: "topleft",
       setView: false,
-      iconDropped: "icon ion-pin",
-      iconLifted: "icon ion-pin",
+      icon: "icon ion-pin",
       showPopup: true,
       labels: {
         title: "Toggle pin drop"
@@ -44,7 +43,7 @@
       this._link.href = '#';
       this._link.title = this.options.labels.title;
 
-      this._icon = L.DomUtil.create('span', this.options.iconDropped, this._link);
+      this._icon = L.DomUtil.create('span', this.options.icon, this._link);
 
       L.DomEvent
         .on(this._link, 'click', L.DomEvent.stopPropagation)
