@@ -1,17 +1,20 @@
-# Leaflet Pindrop
+# Leaflet PinDrop
 
 A Leaflet control that adds a button which allows the user to drop and pickup a marker
 in the center of the screen by toggling the button. Useful when the map uses only one marker.
+
+## Setup
+`bower install leaflet.pindrop.control`
 
 ## Usage
 Add `leaflet-pindrop-control` JavaScript and CSS to the page:
 
 ```html
-<link href="L.Control.Pindrop.css" rel="stylesheet">
-<script src="L.Control.Pindrop.js" ></script>
+<link href="L.Control.PinDrop.css" rel="stylesheet">
+<script src="L.Control.PinDrop.js"></script>
 ```
 
-Add control to your map:
+Add control to the map:
 
 ```javascript
 map.addControl(new L.Control.PinDrop());
@@ -23,7 +26,6 @@ Configurable:
 ```javascript
 L.control.pindrop({
     position: "topleft",
-    setView: false,
     icon: "icon ion-pin",
     draggable: true,
     labels: {

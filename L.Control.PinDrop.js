@@ -14,7 +14,6 @@
   L.Control.PinDrop = L.Control.extend({
     options: {
       position: "topleft",
-      setView: false,
       icon: "icon ion-pin",
       showPopup: true,
       labels: {
