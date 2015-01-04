@@ -1,0 +1,20 @@
+.leaflet-touch .leaflet-bar-part-single {
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+  border-bottom: none;
+}
+.leaflet-touch .leaflet-control-pindrop {
+  box-shadow: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+}
+
+.leaflet-control-pindrop a {
+  font-size: 1.4em;
+  margin-left: 1px;
+  color: #444;
+}
+
+.leaflet-control-pindrop.active a {
+  color: #FC8428;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "leaflet.pindrop.control",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jas-on/leaflet-pindrop-control",
+  "authors": [
+    "Jason Wang <jason.w162@gmail.com>"
+  ],
+  "description": "A Leaflet control to drop a marker into the center of the map and pick it up.",
+  "main": [
+    "L.Control.pindrop.js",
+    "L.Control.pindrop.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jas-on/leaflet-pindrop-control.git"
+  },
+  "keywords": [
+    "leaflet",
+    "pindrop",
+    "pickup"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "leaflet": "~0.7.3"
+  }
+}
