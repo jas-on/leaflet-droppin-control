@@ -45,3 +45,14 @@ pin.pickup(); //removes the marker
 
 pin.currentPin(); //returns the marker
 ```
+
+Events:
+```javascript
+map.on("pindrop", function(control) {
+
+});
+
+map.on("pinpickup", function(control) {
+
+});
+```

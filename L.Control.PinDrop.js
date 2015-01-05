@@ -72,6 +72,7 @@
 
       L.DomUtil.addClass(this._container, "active");
 
+      this._map.fire('pindrop', this);
       return this._pin;
     },
 
@@ -84,6 +85,8 @@
 
       L.DomUtil.removeClass(this._container, "active");
       this._pin = null;
+
+      this._map.fire('pinpickup', this);
     },
 
     currentPin: function() {

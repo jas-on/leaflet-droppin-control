@@ -19,6 +19,9 @@
     "pindrop",
     "pickup"
   ],
+  "ignore": [
+    "**/.*"
+  ],
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
