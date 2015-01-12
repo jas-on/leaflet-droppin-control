@@ -55,19 +55,19 @@
 
     _toggleDropState: function() {
       if (!this._pin) {
-        this.drop();
+        this.drop(true);
       } else {
         this.pickup();
       }
     },
 
-    drop: function() {
+    drop: function(isDraggable) {
       if (this._pin) {
         throw new Error("Must pickup pin before dropping again.");
       }
 
       this._pin = L.marker(this._map.getCenter(), {
-        draggable: true
+        draggable: isDraggable
       }).addTo(this._map);
 
       L.DomUtil.addClass(this._container, "active");
